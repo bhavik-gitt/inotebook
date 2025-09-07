@@ -9,7 +9,7 @@ router.get('/fetchallnotes', fetchuser, async (req, res) => {
     try {
         const userNotes = await Note.find({ user: req.user.id });
         res.json({ Notes: userNotes });
-    } catch (error) {
+    } catch (error) { 
         console.error(error.message);
         res.status(500).send("Internal Server Error");
     }
@@ -63,7 +63,7 @@ router.put('/updatenote/:id', fetchuser, async (req, res) => {
         const updatenote = await Note.findByIdAndUpdate(
             req.params.id,
             { $set: newNote },
-            { new: true } // ✅ correct option key is "new"
+            { new: true } // correct option key is "new"
         );
         res.json({ updatenote });
     } catch (error) {
