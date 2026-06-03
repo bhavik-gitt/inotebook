@@ -40,9 +40,9 @@ const NoteState = (props) => {
     const note = {
       _id: "68bdcb799ac39eaedc4aae81",
       user: "68bbef57055caca971b980a7",
-      title: "Finding",
-      description: "Finding Someone 💕 [Added]",
-      tag: "Personal",
+      title: title,
+      description: description,
+      tag: tag,
       date: "2025-09-07T18:14:17.524Z",
       __v: 0,
     }; 
