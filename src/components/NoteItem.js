@@ -11,10 +11,10 @@ export default function NoteItem({ note }) {
         </div>
         <div className="card-footer bg-transparent d-flex justify-content-between">
           <button className="btn btn-sm btn-primary d-flex align-items-center px-3">
-            <i class="fa-solid fa-edit"></i>
+            <i className="fa-solid fa-edit"></i>
           </button>
           <button className="btn btn-sm btn-danger d-flex align-items-center px-3">
-            <i class="fa-solid fa-trash"></i>
+            <i className="fa-solid fa-trash"></i>
           </button>
         </div>
       </div>
