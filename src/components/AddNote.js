@@ -1,5 +1,4 @@
 import React, { useState,useContext } from "react";
-import Notes from "./Notes";
 import noteContext from "../context/notes/noteContext";
 export default function AddNote() {
      const context = useContext(noteContext);
@@ -71,7 +70,6 @@ export default function AddNote() {
             </button>
           </form>
         </div>
-        <Notes />
       </div>
     </>
   );
